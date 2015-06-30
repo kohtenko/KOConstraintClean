@@ -16,15 +16,16 @@ If you use some constraint for `Size Classes` it will not be removed! Constraint
 ## Installation
 Just execute install command in terminal
   
-$ gem install constraintClean
+`$ gem install constraintClean`
 
 ## Usage
 In your terminal navigate to your project directory:
-$ cd YourProjectDirectory
+
+`$ cd YourProjectDirectory`
 
 And run 
 
-$ constraintClean 
+`$ constraintClean`
 
 This is it! Now all your `storyboard` and `xib` files are pretty again!
 
