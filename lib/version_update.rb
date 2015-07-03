@@ -5,8 +5,6 @@ require 'colorize'
 def notifyAboutUpdates
 	json_object = JSON.parse(open("https://rubygems.org/api/v1/versions/constraintClean/latest.json").read)
     highest_version = Gem.loaded_specs['constraintClean'].version.to_s
-    p json_object
-    p highest_version
 	if json_object["version"].nil?
 		return 
 	end
