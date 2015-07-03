@@ -1,6 +1,9 @@
 #!/usr/bin/ruby
 
 require 'constraintClean'
+require 'version_update'
+
+notifyAboutUpdates
 
 files = Dir.glob("**/*.{storyboard,xib}") 
 files.each{ |file|  cleanupConstraints(file)}
