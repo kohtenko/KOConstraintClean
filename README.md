@@ -31,7 +31,7 @@ This is it! Now all your `storyboard` and `xib` files are pretty again!
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/kohtenko/constraintClean.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kohtenko/KOConstraintClean.
 
 
 ## License
