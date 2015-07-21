@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    constraintClean (1.0.1)
+    constraintClean (1.0.5)
       colorize (~> 0.7)
       nokogiri (~> 1.6)
 
@@ -23,4 +23,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.10.4
+   1.10.5

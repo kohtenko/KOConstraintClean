@@ -57,7 +57,8 @@ def cleanupConstraints(file)
 	if result.count > 0 
 		f1 = File.open(file, 'w')
 		result.each{ |node| node.remove }
-		f1.write(doc.to_xml)	
+		content = doc.to_xml.each_line.reject{|x| x.strip == ""}.join
+		f1.write(content)	
 		f1.close
 		
 		p "removed #{result.count} constraint(s) from #{file}"
