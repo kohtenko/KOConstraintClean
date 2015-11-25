@@ -9,7 +9,7 @@ files = Dir.glob("**/*.{storyboard,xib}")
 files.each{ |file|  cleanupConstraints(file)}
 
 if files.count == 0
-	p "There is no any 'storyboard' or 'xib' files"
+	puts "There is no any 'storyboard' or 'xib' files".colorize(:green)
 else
-	p "Cleanup finished"
+	puts "Cleanup finished".colorize(:green)
 end

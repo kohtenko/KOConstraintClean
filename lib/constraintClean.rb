@@ -31,8 +31,8 @@ def cleanupConstraints(file)
 	excluded.each do |node| 
 		found = false
 		for includedNode in included
-		p node
 			if node.attr('reference') == includedNode.attr('reference')
+			puts "constarint with id = '#{node.attr('reference')}' of '#{file}' is included to sizeClasses variation and can't be removed".colorize(:yellow)
 				found = true
 				break
 			end
@@ -61,6 +61,6 @@ def cleanupConstraints(file)
 		f1.write(content)	
 		f1.close
 		
-		p "removed #{result.count} constraint(s) from #{file}"
+		puts "removed #{result.count} constraint(s) from #{file}".colorize(:green)
 	end
 end
